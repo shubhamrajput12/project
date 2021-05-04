@@ -1,0 +1,21 @@
+<form #postct="ngForm" (ngSubmit)="ct(postct.value)">
+<table border="" width="100%">
+<th style="text-align: center;">Add Contact</th>
+<tr>
+    <td>
+        <input ngModel name="name" style="width: 100%; padding-left: 20px;" type="text" placeholder="Name :">
+    </td>
+</tr>
+<tr>
+    <td>
+        <input ngModel name="contact" style="width: 100%; padding-left: 20px;" type="number" placeholder="Contact Number :">
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <input class="btn btn-primary"  type="submit" value="Add Contact">
+    </td>
+</tr>
+
+</table>
+</form>

@@ -1,0 +1,14 @@
+<table border="" width=100%>
+    <th>
+        Name
+    </th>
+    <th>Contact Number</th>
+    <tr *ngFor="let item of list">
+        <td>
+            {{item.name}}
+        </td>
+        <td>
+            {{item.contact}} <input style="float: right; margin-right: 5%;" (click)="deletecnt(item._id)"  class="btn btn-danger" type="submit" value="Delete">  <input style="margin-right: 5%; float: right;" class="btn btn-secondary" type="submit" value="Edit"> 
+        </td>
+    </tr>
+</table>
